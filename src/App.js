@@ -1,6 +1,7 @@
 import React from "react";
 import "./style/global.scss";
 import ScrollspyNav from "react-scrollspy-nav";
+import { header, map } from "./assests";
 
 export default function App() {
   return (
@@ -74,6 +75,18 @@ export default function App() {
         </div>
         <div className="header__right" />
       </div>
+      <section className="home__section">
+        <img src={header} alt="header" className="home__section__img" />
+        <div className="home__section__overlay">
+          <img src="#" alt="map" className="home__section__overlay__img" />
+          <div className="home__section__overlay__content">
+            <span>IBT </span>Pakistan
+          </div>
+          <div className="home__section__overlay__content__info">
+            Pakistan's Largest Business Tower
+          </div>
+        </div>
+      </section>
     </>
   );
 }
