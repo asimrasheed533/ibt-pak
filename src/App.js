@@ -193,7 +193,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      {/* <section className="specification__section">
+      <section className="specification__section">
         <div className="specification__section__left">
           <div className="specificaryion__left__wraper">
             <div className="specification__section__left__entry">
@@ -401,7 +401,7 @@ export default function App() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section className="feature__section">
         <div className="feature__section__left">
           <div className="feature__section__left__contant__wraper">
