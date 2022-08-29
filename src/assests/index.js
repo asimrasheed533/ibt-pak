@@ -1,3 +1,9 @@
 export { default as header } from "./header.png";
 export { default as map } from "./map.png";
 export { default as intro } from "./intro.png";
+export { default as office } from "./office.png";
+export { default as tower } from "./tower.png";
+export { default as bedroom } from "./bedroom.png";
+export { default as lounge } from "./lounge.png";
+export { default as feature } from "./feature.png";
+export { default as mapibt } from "./mapibt.png";
