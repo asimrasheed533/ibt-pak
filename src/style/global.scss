@@ -314,6 +314,7 @@ body {
 .location__wraper__heading {
   font-size: 24px;
   font-weight: 700;
+  position: relative;
 }
 .location__wraper__cards {
   width: 100%;
@@ -325,10 +326,10 @@ body {
   content: "";
   background-color: $primary;
   position: absolute;
-  width: 10%;
+  width: 22%;
+  left: 0;
+  bottom: 0;
   height: 15px;
-  margin-top: 12px;
-  margin-left: -266px;
   z-index: -1;
 }
 .location__card {
@@ -390,19 +391,22 @@ body {
   color: white;
 }
 .location__map__container__overlay__contant__heading {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0.5em 0em;
+  position: relative;
+  z-index: 2;
 }
 .location__map__container__overlay__contant__heading::after {
   content: "";
   background-color: $primary;
   position: absolute;
-  top: 39%;
+  top: 50%;
   left: 0px;
-  width: 10%;
-  height: 16px;
-  // z-index: -1;
+  width: 25%;
+  height: 19px;
+  z-index: -1;
+  opacity: 0.9;
 }
 .location__map__container__overlay__contant__sub__heading {
   font-size: 16px;
@@ -632,6 +636,17 @@ body {
 }
 
 @media (max-width: 800px) {
+  .location__wraper__cards {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .location__card {
+    width: 60%;
+  }
+  .location__wraper__heading {
+    text-align: center;
+  }
   .location__map__container__overlay__contant {
     width: 115%;
     padding: 0em 1em;
@@ -785,6 +800,9 @@ body {
   }
 }
 @media (max-width: 500px) {
+  .location__wraper__heading {
+    font-size: 16px;
+  }
   .intro__container__left__contant__heading {
     font-size: 20px;
   }
