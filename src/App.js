@@ -42,12 +42,7 @@ export default function App() {
         >
           <div className="header__logo__main">
             <a href="#" className="header__contant__logo">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="199"
-                height="38"
-                viewBox="0 0 199 38"
-              >
+              <svg width="199" height="38" viewBox="0 0 199 38">
                 <g
                   id="Group_437"
                   data-name="Group 437"
@@ -84,7 +79,7 @@ export default function App() {
           {isOpen ? (
             <div className="ibt__nav__link__wraper">
               <a
-                href="#"
+                href="#home__section"
                 onClick={() => {
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
@@ -93,9 +88,10 @@ export default function App() {
                 className="ibt__nav__link"
               >
                 Home
+                <title>home</title>
               </a>
               <a
-                href="#"
+                href="#intro__section"
                 onClick={() => {
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
@@ -104,9 +100,10 @@ export default function App() {
                 className="ibt__nav__link"
               >
                 About Us
+                <title>About us</title>
               </a>
               <a
-                href="#"
+                href="#feature__section"
                 onClick={() => {
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
@@ -115,9 +112,10 @@ export default function App() {
                 className="ibt__nav__link"
               >
                 Feature
+                <title>feature</title>
               </a>
               <a
-                href="#"
+                href="#location__map__section"
                 onClick={() => {
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
@@ -126,9 +124,10 @@ export default function App() {
                 className="ibt__nav__link"
               >
                 components
+                <title>components</title>
               </a>
               <a
-                href="#"
+                href="#footer__section"
                 onClick={() => {
                   if (window.innerWidth < 900) {
                     setIsOpen(false);
@@ -137,6 +136,7 @@ export default function App() {
                 className="ibt__nav__link"
               >
                 Contact Us
+                <title>contact us</title>
               </a>
             </div>
           ) : null}
@@ -155,19 +155,21 @@ export default function App() {
         </div>
         <div className="header__right" />
       </div>
-      <section className="home__section">
+      <section id="home__section" className="home__section">
         <img src={header} alt="header" className="home__section__img" />
         <div className="home__section__overlay">
           <img src={map} alt="map" className="home__section__overlay__img" />
           <div className="home__section__overlay__content">
-            <span>IBT </span>Pakistan
+            <div className="header__heading__text">
+              <span>IBT</span> Pakistan
+            </div>
             <div className="home__section__overlay__content__info">
               Pakistan's Largest Business Tower
             </div>
           </div>
         </div>
       </section>
-      <section className="intro__section">
+      <section id="intro__section" className="intro__section">
         <div className="intro__container">
           <div className="intro__container__left">
             <div className="intro__container__left__contant">
@@ -402,7 +404,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="feature__section">
+      <section id="feature__section" className="feature__section">
         <div className="feature__section__left">
           <div className="feature__section__left__contant__wraper">
             <div className="feature__section__left__contant">
@@ -430,7 +432,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="location__section">
+      <section id="location__section" className="location__section">
         <div className="location__wraper">
           <div className="location__wraper__heading">LOCATION DISTANCES</div>
           <div className="location__wraper__cards">
@@ -522,7 +524,7 @@ export default function App() {
                       transform="translate(641.947 3634)"
                       fill="#001920"
                       stroke="#ffeb38"
-                      stroke-width="5"
+                      strokeWidth="5"
                     />
                     <path
                       id="Path_60"
@@ -531,7 +533,7 @@ export default function App() {
                       transform="translate(641.947 3634)"
                       fill="#001920"
                       stroke="#ffeb38"
-                      stroke-width="5"
+                      strokeWidth="5"
                     />
                     <rect
                       id="Rectangle_818"
@@ -541,7 +543,7 @@ export default function App() {
                       transform="translate(884.31 3717.257)"
                       fill="#001920"
                       stroke="#ffeb38"
-                      stroke-width="5"
+                      strokeWidth="5"
                     />
                     <rect
                       id="Rectangle_819"
@@ -551,7 +553,7 @@ export default function App() {
                       transform="translate(884.308 3638.146)"
                       fill="#001920"
                       stroke="#ffeb38"
-                      stroke-width="5"
+                      strokeWidth="5"
                     />
                     <rect
                       id="Rectangle_820"
@@ -561,7 +563,7 @@ export default function App() {
                       transform="translate(884.306 3677.709)"
                       fill="#001920"
                       stroke="#ffeb38"
-                      stroke-width="5"
+                      strokeWidth="5"
                     />
                   </g>
                 </svg>
@@ -699,7 +701,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="location__map__section">
+      <section id="location__map__section" className="location__map__section">
         <div className="location__map__container">
           <div className="location__map__container__img">
             {<img src={mapibt} alt="map" />}
@@ -733,7 +735,7 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className="footer__section">
+      <section id="footer__section" className="footer__section">
         <div className="footer__left"></div>
         <div className="footer__contant__container">
           <div className="footer__contant__container__contant">
@@ -749,7 +751,6 @@ export default function App() {
           </div>
           <div className="footer__contant__pages__link__wraper">
             <div className="footer__links__wraper__main">
-              {" "}
               <div className="footer__pages__links__heading">pages</div>
               <a href="#" className="footer__pages__links">
                 Home
@@ -792,7 +793,7 @@ export default function App() {
             </div>
             <div className="footer__mailing__send">
               <input
-                type="text"
+                type="Eail"
                 className="footer__mailing__send__input"
                 placeholder="Email..."
               />
@@ -814,10 +815,10 @@ export function Close({ size, color }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke={color}
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-x"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="feather feather-x"
     >
       <line x1="18" y1="6" x2="6" y2="18"></line>
       <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -834,10 +835,10 @@ export function Menu({ size, color }) {
       viewBox="0 0 24 24"
       fill="none"
       stroke={color}
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="feather feather-menu"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="feather feather-menu"
     >
       <line x1="3" y1="12" x2="21" y2="12"></line>
       <line x1="3" y1="6" x2="21" y2="6"></line>
