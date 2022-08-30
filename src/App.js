@@ -1,6 +1,18 @@
 import React, { useLayoutEffect } from "react";
 import "./style/global.scss";
-import { header, map, intro, feature, mapibt } from "./assests";
+import {
+  header,
+  map,
+  intro,
+  feature,
+  mapibt,
+  footer,
+  facebook,
+  linkedin,
+  snapchat,
+  twitter,
+  whatsapp,
+} from "./assests";
 
 export default function App() {
   const [isOpen, setIsOpen] = React.useState(true);
@@ -42,7 +54,7 @@ export default function App() {
         >
           <div className="header__logo__main">
             <a href="#" className="header__contant__logo">
-              <svg width="199" height="38" viewBox="0 0 199 38">
+              <svg width="150" height="38" viewBox="0 0 199 38">
                 <g
                   id="Group_437"
                   data-name="Group 437"
@@ -736,7 +748,9 @@ export default function App() {
         </div>
       </section>
       <section id="footer__section" className="footer__section">
-        <div className="footer__left"></div>
+        <div className="footer__left">
+          <img src={footer} alt="footer" />
+        </div>
         <div className="footer__contant__container">
           <div className="footer__contant__container__contant">
             <div className="footer__contant__container__contant__heading">
@@ -769,27 +783,29 @@ export default function App() {
               </a>
             </div>
           </div>
-          <div className="footer__contant__quick__link__wraper">
-            <div className="footer__contant__quick__link__wraper__inner">
-              <div className="footer__quick__links__heading">Quick Links</div>
-              <a href="#" className="footer__quick__link">
+          <div className="footer__contant__pages__link__wraper">
+            <div className="footer__links__wraper__main">
+              <div className="footer__pages__links__heading">Quick Links</div>
+              <a href="#" className="footer__pages__links">
                 About Us
               </a>
-              <a href="#" className="footer__quick__link">
+              <a href="#" className="footer__pages__links">
                 Contact Us
               </a>
-              <a href="#" className="footer__quick__link">
+              <a href="#" className="footer__pages__links">
                 Term & Conditions
               </a>
-              <a href="#" className="footer__quick__link">
-                Privacy Policy{" "}
+              <a href="#" className="footer__pages__links">
+                Privacy Policy
               </a>
             </div>
           </div>
-          <div className="footer__mailing__wraper">
-            <div className="footer__mailing__wraper__heading">Mailing List</div>
-            <div className="footer__mailing__wraper__sub__heading">
-              Sign up for our mailing list to get latest updates and offers
+          <div className="footer__contant__pages__link__wraper">
+            <div className="footer__links__wraper__main">
+              <div className="footer__pages__links__heading">Mailing List</div>
+              <div className="footer__mailing__wraper__sub__heading">
+                Sign up for our mailing list to get latest updates and offers
+              </div>
             </div>
             <div className="footer__mailing__send">
               <input
@@ -800,8 +816,29 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="footer__right"></div>
+        <div className="footer__right">
+          <div className="footer__right__bg" />
+        </div>
       </section>
+      <div className="buttom__footer__social">
+        <div className="buttom__footer__social__link">
+          <a href="#" className="facebook">
+            <img src={facebook} alt="facebook" />
+          </a>
+          <a href="#" className="LinkdIN">
+            <img src={linkedin} alt="facebook" />
+          </a>
+          <a href="#" className="Instagram">
+            <img src={snapchat} alt="facebook" />
+          </a>
+          <a href="#" className="Snapchat">
+            <img src={twitter} alt="facebook" />
+          </a>
+          <a href="#" className="Snapchat">
+            <img src={whatsapp} alt="facebook" />
+          </a>
+        </div>
+      </div>
     </>
   );
 }

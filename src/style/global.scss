@@ -442,8 +442,6 @@ body {
   background-color: $primary;
   border-bottom-right-radius: 70px;
   padding: 1.5em;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 .contant__container__text {
   font-size: 14px;
@@ -464,19 +462,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.footer__left {
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+.footer__left img {
+  height: 200px;
+}
 .footer__contant__container {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2em 1em;
+  padding: 2em 0em;
 }
 .footer__contant__container__contant {
   width: 25%;
   display: flex;
+  padding-right: 3em;
   align-items: flex-start;
-  // justify-content: flex-start;
   flex-direction: column;
 }
 .footer__contant__container__contant__heading {
@@ -495,20 +500,23 @@ body {
 .footer__contant__pages__link__wraper {
   width: 20%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  padding: 0em 1em;
   flex-direction: column;
+  position: relative;
 }
 .footer__links__wraper__main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: flex-start;
-  position: relative;
 }
-.footer__contant__pages__link__wraper::after {
+.footer__contant__pages__link__wraper::before {
   content: "";
   position: absolute;
   height: 150px;
+  left: 0;
+  top: 0;
   width: 6px;
   background-color: $primary;
 }
@@ -522,19 +530,8 @@ body {
   font-weight: 700;
   margin-bottom: 12px;
 }
-.footer__contant__quick__link__wraper {
-  width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.footer__contant__quick__link__wraper__inner {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2em;
-}
-.footer__contant__quick__link__wraper__inner::after {
+
+.footer__contant__quick__link__wraper__inner::before {
   content: "";
   position: absolute;
   height: 150px;
@@ -585,11 +582,44 @@ body {
 }
 .footer__mailing__send input {
   padding: 12px;
-  // border-radius: 8px;
   margin: 12px 0px;
   outline: none;
 }
-
+.footer__right {
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+}
+.footer__right__bg {
+  width: 100%;
+  background-color: $primary;
+  height: 200px;
+  background-color: $primary;
+  border-top-left-radius: 60px;
+  position: relative;
+}
+.footer__right__bg::before {
+  content: "";
+  position: absolute;
+  height: 200px;
+  width: 130%;
+  border-top-left-radius: 60px;
+  border: 1px solid #080808;
+  border: 1px solid $primary;
+}
+.buttom__footer__social {
+  border-top: 2px solid black;
+  width: 100%;
+  padding: 1em;
+}
+.buttom__footer__social__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttom__footer__social__link img {
+  height: 40px;
+}
 @media (max-width: 1366px) {
   .header__content {
     max-width: 1100px;
