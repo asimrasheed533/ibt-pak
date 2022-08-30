@@ -12,7 +12,12 @@ import {
   snapchat,
   twitter,
   whatsapp,
+  office,
+  tower,
+  bedroom,
+  lounge,
 } from "./assests";
+import { ComponentSectionCard } from "./components/ComponentSectionCard";
 
 export default function App() {
   const [isOpen, setIsOpen] = React.useState(true);
@@ -203,6 +208,28 @@ export default function App() {
           <div className="intro__container__right">
             <div className="intro__container__right__img">
               <img src={intro} alt="intro" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="components__section" className="components__section">
+        <div className="components__section__top" />
+        <div className="components__section__bottom">
+          <div className="components__section__bottom__content">
+            <div className="components__section__bottom__content__heading">
+              PROJECT COMPONENTS
+            </div>
+            <div className="components__section__bottom__content__content">
+              <ComponentSectionCard
+                img={tower}
+                title="One dedicated tower for most Luxurious Apartments "
+              />
+              <ComponentSectionCard img={lounge} title="Industrial Mall" />
+              <ComponentSectionCard img={bedroom} title="One Five Star Hotel" />
+              <ComponentSectionCard
+                img={office}
+                title="Dedicated corporate and IT Centre"
+              />
             </div>
           </div>
         </div>
